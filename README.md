@@ -28,12 +28,15 @@ Create an environment for AIDJ-System
 conda create -n AIDJ-System python=3.8.5 -y
 conda activate AIDJ-System
 ```
-Installation steps as below:
+Installation steps as below (Please follow step by step):
 ```
-cd AIDJ-System/MusicPlayer
+cd aidjsystem-main/MusicPlayer
 pip install cython
 pip install numpy
 pip install -r requirements.txt
+pip uninstall numpy
+pip install numpy==1.22
+conda install pyaudio
 ```
 and run the code by:
 ```
